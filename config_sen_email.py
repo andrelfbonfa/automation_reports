@@ -24,8 +24,7 @@ def enviaemail(assunto, corpo, anexo):
       
     # storing the subject  
     msg['Subject'] = assunto
-    ##rrvv = str(assunto)
-    ##print = (rrvv) 
+   
       
     # string to store the body of the mail 
     body = corpo
@@ -53,7 +52,7 @@ def enviaemail(assunto, corpo, anexo):
     msg.attach(p) 
       
     # creates SMTP session 
-    s = smtplib.SMTP('email-smtp.us-east-1.amazonaws.com:587') 
+    s = smtplib.SMTP('server:port') 
       
     # start TLS for security 
     s.starttls() 
