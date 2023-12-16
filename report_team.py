@@ -27,7 +27,7 @@ with open("sql/query.sql") as f:
 
 # Adicionar uma aba
      sheet = wb.active
-     sheet.title = 'PLD_CERC'
+     sheet.title = 'report'
 
 # Escrever os cabeçalhos na primeira linha
      for i, column_title in enumerate(cursor.description):
